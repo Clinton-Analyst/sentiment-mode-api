@@ -3,7 +3,7 @@ import requests
 
 st.title("Sentiment Mode Analyzer")
 
-api_url = "http://127.0.0.1:8000/analyze"
+api_url = "https://sentiment-mode-api.onrender.com/analyze"
 
 user_input = st.text_area("Enter multiple sentences (one per line)")
 
