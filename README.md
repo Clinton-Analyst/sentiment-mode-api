@@ -1,8 +1,8 @@
-Sentiment Mode Analyzer API 
+# Sentiment Mode Analyzer API 
 
 A full-stack sentiment analysis application built with FastAPI and Streamlit that analyzes text sentiment and returns the overall mode sentiment.
 
-Project Overview
+# Project Overview
 
 This project provides:
 
@@ -18,10 +18,10 @@ Interactive frontend dashboard using Streamlit
 
 Deployment-ready configuration
 
-Architecture
+# Architecture
 User → Streamlit Dashboard → FastAPI Backend → Sentiment Model → JSON Response
 
-Technologies Used
+# Technologies Used
 
 FastAPI
 
@@ -35,28 +35,30 @@ Pytest
 
 Requests
 
-Installation
+# Installation
 git clone <your-repo-url>
 cd sentiment-mode-api
+# creating virtual environment
 python -m venv venv
 venv\Scripts\activate
+# installation of requirements
 pip install -r requirements.txt
 
-Run Backend
+# Run Backend
 uvicorn app.main:app --reload
 
 
-API Docs:
+# API Docs:
 
 http://127.0.0.1:8000/docs
 
-Run Streamlit Dashboard
+# Run Streamlit Dashboard
 streamlit run streamlit_app.py
 
-Run Unit Tests
+# Run Unit Tests
 pytest -v
 
-API Endpoint
+# API Endpoint
 POST /analyze
 
 Request:
@@ -73,12 +75,12 @@ Response:
   "mode": "Positive"
 }
 
-Deployment
+# Deployment
 
 Backend deployed on Render
 Frontend deployed on Streamlit Cloud
 
-Learning Outcomes
+# Learning Outcomes
 
 API design
 
